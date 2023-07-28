@@ -22,6 +22,7 @@ else if (isset($_POST['name'], $_POST['email'], $_POST['player'], $_POST['vehicl
 	}
 
 	require __DIR__ . '/savedata.php';
+	require __DIR__ . '/sql.php';
 	
 
 	// show the $name and $email
