@@ -16,7 +16,15 @@ else if (isset($_POST['name'], $_POST['email'], $_POST['player'], $_POST['vehicl
 		die();
 	}
 
-	if (false == strpos($_POST['email'], '@')){
+	function is_mail($str) {
+		if (preg_match('/^[a-z0-9._+^~-]+@[a-z0-9.-]+$/i', $str)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	if (!is_mail($email)){
 		echo '@ should be included in emali';
 		die();
 	}

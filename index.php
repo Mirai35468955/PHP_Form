@@ -16,7 +16,7 @@
 
             <div class="container">
                 <label for="name">Email:</label>
-                <input type="email" name="email" required="required" placeholder="Enter your email" />
+                <input type="text" name="email" required="required" placeholder="Enter your email" />
             </div>
             <br>
             <br>
